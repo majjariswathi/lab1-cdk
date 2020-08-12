@@ -1,0 +1,60 @@
+*************ARRAYS***********
+1. Arrays are objects, which stores multible variables of same type.
+2.Array length should be fixed
+3.They are created during runtime
+4. It comes under SEQUENTIAL ACCESS
+5. It follows STATIC ALLOCATION
+6. we can acces array elements by using index 
+
+
+***********LINKEDLIST***********
+
+1.It is both sequential and random
+2.it follows DYNAMIC ALLOCATION
+3. it can insert dynamically 
+4.perform operations very easy
+
+
+
+*************STACK********
+
+1.SEQUENTIAL ACCESS
+2.DYNAMICALLY ALLOCATED
+3.FIRST IN LAST OUT
+
+
+****************QUEUE************
+1.SEQUENTIAL
+2.DYNAMICALLY
+3.FIRST IN FIRST OUT
+
+**************Difference between static memory allocation and dynamic memory allocation***************
+
+STATIC MEMORY ALLOCATION :
+
+1. In static memory allocation, once the variables are allocated, they remain permanent.Static memory allocation is fixed
+2.In SMA it is not possible to resize after initial allocation.
+3.In static memory, allocation execution is faster than dynamic memory allocation.
+4.In SMA, we cannot reuse the unused memory.
+
+EXAMPLES OF STATIC  DATA STRUCTRES:
+
+1.ARRAY
+
+
+DYNAMIC MEMORY ALLOCATION:
+
+1. Dynamic memory allocation is a method of allocating memory, and once the memory is allocated, it can be changed.
+2.In DMA, the memory can be minimized or maximize accordingly.
+3.In DMA  execution is slower than static memory allocation.
+4.It allows reusing the memory even the programmer can allocate more memory whenever he  required  and also can release the memory whenever it  necessary.
+
+EXAMPLE OF DMA:
+
+1.LINKEDLIST
+2.STACK
+3.QUEUE
+4.TREE
+
+
+
