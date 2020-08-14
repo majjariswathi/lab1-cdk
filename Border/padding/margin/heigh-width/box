@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: yellow;
+}
+div {
+  background-color: lightgrey;
+  width: 500px;
+  border: 15px solid pink;
+  padding: 100px;
+  margin: 30px;
+}
+</style>
+</head>
+<body>
+
+<h2>Welcome to  cdk</h2>
+
+<p>hope everyone is good.</p>
+
+<div>Hi all!!!!!</div>
+
+</body>
+</html>
