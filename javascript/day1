@@ -1,0 +1,48 @@
+**************JAVASCRIPT**************
+1.JavaScript is a scripting language used to create and control dynamic website content, 
+i.e. anything that moves, refreshes, or otherwise changes on your screen without requiring you to manually reload a web page.
+
+EXECUTING THE SCRIPT IN BROWSER
+1.JavaScript supports and avaliable
+
+JAVASCRIPT LIBRARIES
+1.there are at least 24 JS frameworks and around 83 libraries
+2.A JavaScript library is a library of pre-written JavaScript that allows for easier development of JavaScript-based applications
+
+******LAb1*****
+  
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function test1(){
+	var str = "Hello, " + document.getElementById("mynm").value;
+	console.log(str);
+	document.getElementById("mydiv").innerHTML="<h1>"+ str + "</h1>"
+}
+
+</script>
+
+</head>
+<body>
+Name : <input type="text" id="mynm" /><br/>
+<input  id ="btn" type="button" value="Click Me" onclick="test1()" />
+<div id="mydiv">ssss</div>
+
+</body>
+</html>
+
+
+***********LAB2************
+
+Empno
+Ename
+Salary
+-> Button -> Add
+div tag
+-> table -> with current employee
+
+
+
