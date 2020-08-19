@@ -1,0 +1,14 @@
+select e1.empno, e1.ename, e1.job, e1.mgr, e2.empno, e2.ename,e2.job 
+from Emp e1, Emp e2
+where e1.mgr = e2.empno
+From Vaishali Tapaswi to Everyone:  12:59 PM
+select empno, ename, deptno from emp;
+select e.empno, e.ename, e.deptno, d.dname 
+from dept d, emp e
+where d.deptno = e.deptno;
+
+select count(*) from emp where deptno=10
+select deptno, count(*) from emp group by deptno
+SQL> select max(e.sal)-min(e1.sal) from Emp  e, Emp e1 where e.deptno=
+10 and e1.deptno=20;
+
