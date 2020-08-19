@@ -1,0 +1,80 @@
+SELECT d.deptno, count(e.empno)
+FROM dept d Left outer join emp e
+ON d.deptno = e.deptno
+group by d.deptno ;
+
+
+Display the information of the people who have no people reporting to them.
+ Display the information of the people who have maximum people reporting to them.
+ Find out the department in which no employee is working.
+select e.empno,e.ename,e.mgr from emp e where e.empno  in (select e1.mgr from emp e1)
+ Find out the department in which no employee is working.
+ 
+	select deptno, dname from dept  where deptno not in(select distinct deptno from emp); 
+
+ select d.deptno, count(e.empno) 
+ from emp e right outer join dept d 
+ on e.deptno= d.deptno 
+ group by d.deptno 
+ having count(e.empno)=0;
+ 
+Display the information of the people who have maximum people reporting to them.
+	select empno, ename, job, mgr
+	from emp
+	where empno = (	select mgr
+	from emp
+	group by mgr 
+	having count(*)=(select max(count(*)) from emp 	group by mgr ))
+*********************************************************************************
+create table permemp (
+		empno number(3) primary key,  
+		ename varchar(20),
+		salary number(7),
+		dept char(2)
+		);
+		
+	
+insert into permemp values (1,'Vaishali',100,'IT');
+insert into permemp values (2,'Simran',300,'FI');
+insert into permemp values (3,'Vijetha',340,'IT');
+insert into permemp values (4,'Saumit',440,'IT');
+
+create table tempemp (
+		empno number(3) primary key,  
+		ename varchar(20),
+		compname varchar(20),
+		contract char(2)
+		);
+insert into tempemp values (4,'Saumit','comp1','YR');
+insert into tempemp values (5,'Rekha','comp3','QR');
+insert into tempemp values (6,'Ramya','comp2','YR');
+insert into tempemp values (7,'Saumitra','comp1','QR');		
+
+
+select empno, ename,dept  from permemp Union select empno, ename,compname from tempemp;
+select empno, ename from permemp Union all select empno, ename from tempemp;
+
+select empno, ename,dept as Department, null as company  from permemp
+ Union 
+select empno, ename,null ,compname from tempemp;
+
+CREATE TABLE Person (
+    Person_id number(3) primary key,
+    Person_name VARCHAR2 ( 255 ) NOT NULL,
+    city   VARCHAR2 ( 255 ) NOT NULL,
+    state  VARCHAR2 ( 255 ) NOT NULL,
+    date_of_Birth DATE NOT NULL,
+    Adhaar_no number(20)
+);
+
+insert into Person values (1,'Vaishali','HYD','KK',DATE '1999-11-14',34567899);
+insert into Person values (2,'Simran','HYD','SS',DATE '1999-11-24',34897899);
+insert into Person values (3,'Vijetha','HYD','PP',DATE '1998-11-14',67567899);
+insert into Person values (4,'Saumit','HYD','RR',DATE '1997-12-14',8963899);
+insert into Person values (5,'Swarali','HYD','KK',DATE '1997-10-24',5678767899);
+insert into Person values (6,'Vishnu','PUNE','CC',DATE '1996-11-14',67567899);
+insert into Person values (7,'Reshma','HYD','AA',DATE '1997-07-04',34567899);
+insert into Person values (8,'Rohit','HYD','BB',DATE '1995-11-14',356767899);
+
+select * from Person order by asc;
+
