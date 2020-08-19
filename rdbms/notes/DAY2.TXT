@@ -1,0 +1,60 @@
+create table emp (  
+		empno number(3) primary key,    
+		ename varchar(20),  
+		salary number(7)
+		) 
+
+create table empedu (  
+		empno number(3) primary key,    
+		degree varchar(20),  
+		college varchar(20),
+		yopassing number(7)
+		) 
+
+insert into emp values (1,'Vaishali',1000);
+insert into emp values (2,'Simran',30000);
+insert into emp values (3,'Vijetha',34000);
+insert into emp values (4,'Saumit',44000);
+insert into emp values (5,'Swarali',30500);
+insert into emp values (6,'Vishnu',99900);
+insert into emp values (7,'Reshma',10000);
+insert into emp values (8,'Rohit',45300);
+insert into emp values (9,'SaiKiran',110000);
+insert into emp values (10,'Naresh',70500);
+insert into emp values (11,'Aishwarya',56000);
+insert into emp values (12,'Akash',411000);
+insert into emp values (13,'Akshay',110000);
+insert into emp values (14,'Anusha',22200);
+insert into emp values (15,'Naga',10000);
+insert into emp values (16,'Ramya',50000);
+
+
+SELECT * FROM emp;
+
+insert into empedu values (1,'B.Tech',' SRI CHAITANYA',2020);
+insert into empedu values (2,'B.E','SRI CHAITANYA',2020);
+insert into empedu values (3,'M.TECH',' LOVELY',2020);
+insert into empedu values (4,'SECONDARY',' PROFESSIONAL',2020);
+insert into empedu values (5,'HIGH SCHOOL','KPG',2020);
+insert into empedu values (6,'P.HD','HRT',2020);
+insert into empedu values (7,'B.SC','VIT'2020);
+insert into empedu values (8,'B.COM',' IIT HYD',2020);
+insert into empedu values (9,'CA','NIT WAR',2020);
+insert into empedu values (10,'B.ED',' NIT TRICHY',2020);
+insert into empedu values (11,'B.TECH(HONS)',' NIT AHM',2020);
+insert into empedu values (12,'b.TECH (ECE)','CHANDIGRAH UNI',2020);
+insert into empedu values (13,'B.SC (STAISTICS)',' NIT JALA',2020);
+insert into empedu values (14,'B.ED(MATHS)','NIT CALICUT',2020);
+insert into empedu values (15,'B.A (ENGLISH)','CMR',2020);
+insert into empedu values (16,'B.SC (AGRI)','BOLD',2020);
+
+SELECT
+    empno,
+    degree,
+    college,
+    yopassing
+FROM
+    empedu
+ORDER BY
+    empno ASC;
+
